@@ -1,6 +1,6 @@
 ## A tiny helper to process Roon’s **Skipped files** export and make your library importable
 
-> ⚠️ Always keep a backup. Originals are deleted **only after** the new FLAC verifies OK, but it’s still your library.
+> Always keep a backup. Originals are deleted **only after** the new FLAC verifies OK, but it’s still your library.
 
 ---
 
@@ -8,7 +8,6 @@
 
 FLAC is broadly supported (including by Roon), lossless, and less fussy than `.m4a/.mp4`.
 
----
 
 ## Requirements
 
@@ -18,7 +17,6 @@ FLAC is broadly supported (including by Roon), lossless, and less fussy than `.m
   ```bash
   pip install pandas openpyxl
 
----
 
 ## Get the Excel report from Roon
 
@@ -26,7 +24,6 @@ FLAC is broadly supported (including by Roon), lossless, and less fussy than `.m
 
 That `.xlsx` is what this tool reads.
 
----
 
 ## Usage
 
@@ -44,7 +41,6 @@ python fix_skipped.py --xlsx "SkippedFiles.xlsx" --root "C:\path\to\music\folder
 
 The script will print planned actions, stream **ffmpeg** progress during `--apply`, and write a CSV log next to your files.
 
----
 
 ## What the script does
 
@@ -63,7 +59,6 @@ The script will print planned actions, stream **ffmpeg** progress during `--appl
 
   * `fix_log_preview.csv` or `fix_log_apply.csv`
 
----
 
 ## Notes & Limitations
 
@@ -71,7 +66,6 @@ The script will print planned actions, stream **ffmpeg** progress during `--appl
 * The script uses paths from the `.xlsx` or matches by **filename** in `--root`.
 * If the destination `.flac` exists, a “ (2)”, “ (3)”, … suffix is added.
 
----
 
 ## Example commands
 
@@ -83,7 +77,6 @@ python fix_skipped.py --xlsx "C:\Users\me\Desktop\SkippedFiles.xlsx" --root "D:\
 python fix_skipped.py --xlsx "C:\Users\me\Desktop\SkippedFiles.xlsx" --root "D:\Music\Inbox" --apply
 ```
 
----
 
 ## License
 
