@@ -16,8 +16,8 @@ How to use:
   1) In Roon: Settings → Library → (optional) Clean up library →
                View skipped files → Export to Excel
   2) Run one of:
-       python fix_skipped.py --xlsx "SkippedFiles.xlsx" --root "C:\\path\\to\\folder"
-       python fix_skipped.py --xlsx "SkippedFiles.xlsx" --root "C:\\path\\to\\folder" --apply
+       python library_converter.py --xlsx "SkippedFiles.xlsx" --root "C:\\path\\to\\folder"
+       python library_converter.py --xlsx "SkippedFiles.xlsx" --root "C:\\path\\to\\folder" --apply
 
 Requirements:
   - Python 3.9+

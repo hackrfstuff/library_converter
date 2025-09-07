@@ -30,13 +30,13 @@ That `.xlsx` is what this tool reads.
 **Preview (no changes):**
 
 ```bash
-python fix_skipped.py --xlsx "SkippedFiles.xlsx" --root "C:\path\to\music\folder"
+python library_converter.py --xlsx "SkippedFiles.xlsx" --root "C:\path\to\music\folder"
 ```
 
 **Apply (convert/repair + delete originals on success):**
 
 ```bash
-python fix_skipped.py --xlsx "SkippedFiles.xlsx" --root "C:\path\to\music\folder" --apply
+python library_converter.py --xlsx "SkippedFiles.xlsx" --root "C:\path\to\music\folder" --apply
 ```
 
 The script will print planned actions, stream **ffmpeg** progress during `--apply`, and write a CSV log next to your files.
@@ -71,10 +71,10 @@ The script will print planned actions, stream **ffmpeg** progress during `--appl
 
 ```bash
 # Preview
-python fix_skipped.py --xlsx "C:\Users\me\Desktop\SkippedFiles.xlsx" --root "D:\Music\Inbox"
+python library_converter.py --xlsx "C:\Users\me\Desktop\SkippedFiles.xlsx" --root "D:\Music\Inbox"
 
 # Apply
-python fix_skipped.py --xlsx "C:\Users\me\Desktop\SkippedFiles.xlsx" --root "D:\Music\Inbox" --apply
+python library_converter.py --xlsx "C:\Users\me\Desktop\SkippedFiles.xlsx" --root "D:\Music\Inbox" --apply
 ```
 
 
