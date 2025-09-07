@@ -25,8 +25,7 @@ Requirements:
   - ffmpeg and ffprobe available on PATH
 
 Notes:
-  - No deep recursive search; the script uses paths from the .xlsx
-    or matches by filename in --root.
+  - The script uses paths from the .xlsx, or matches by filename in --root.
   - If a destination filename already exists, “ (2)”, “ (3)”, etc. is appended.
   - Back up first. Originals are removed only after a verified success,
     but it’s still your library.
