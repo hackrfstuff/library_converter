@@ -16,7 +16,7 @@ FLAC is broadly supported (including by Roon), lossless, and less fussy than `.m
 - Python deps:
   ```bash
   pip install pandas openpyxl
-
+  ```
 
 ## Get the Excel report from Roon
 
